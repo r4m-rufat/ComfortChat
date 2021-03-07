@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:id="@+id/rellayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/rellayout2">
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/left_defaultImage"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:src="@drawable/person"
+               app:civ_border_width="1dp"
+               app:civ_border_color="@color/colorPrimaryDark"
+               android:layout_marginLeft="10dp"/>
+
+
+           <ImageView
+               android:layout_width="30dp"
+               android:layout_height="4dp"
+               android:background="@color/colorPrimaryDark"
+               android:layout_toRightOf="@id/left_defaultImage"
+               android:layout_marginTop="25dp"
+               android:layout_marginLeft="1dp"/>
+
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/right_defaultImage"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:src="@drawable/person"
+               app:civ_border_width="1dp"
+               app:civ_border_color="@color/colorPrimaryDark"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="10dp"/>
+
+
+           <ImageView
+               android:layout_width="30dp"
+               android:layout_height="4dp"
+               android:background="@color/colorPrimaryDark"
+               android:layout_toLeftOf="@id/right_defaultImage"
+               android:layout_marginTop="25dp"
+               android:layout_marginRight="1dp"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:text="Profile Info"
+               android:layout_centerVertical="true"
+               android:textSize="20sp"
+               android:textColor="@color/colorPrimaryDark"
+               android:fontFamily="@font/shadow"/>
+
+
+       </RelativeLayout>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/rellayout2"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_arrow_downward"
+            android:layout_marginTop="-8dp"/>
+
+        <ImageView
+            android:id="@+id/ic_downwardArrow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/rellayout2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_arrow_downward"
+            android:layout_marginTop="-8dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rellayout1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-10dp"
+        android:background="@drawable/background_for_info"
+        android:layout_marginBottom="50dp">
+
+
+        <RelativeLayout
+            android:id="@+id/rellayout3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleDefaultImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:civ_border_color="@color/colorPrimaryDark"
+                app:civ_border_width="2dp"
+                android:src="@drawable/person"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/ic_camera_add"/>
+
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etxtProfileName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="50dp"
+            android:paddingBottom="15dp"
+            android:hint="Type your name here"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_below="@+id/rellayout3"
+            android:textSize="18sp"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/nextButton"
+            android:text="NEXT"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

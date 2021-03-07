@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/circleProfileImageForCalls"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/colorPrimaryDark"
+            android:src="@drawable/testing"
+            android:padding="5dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/circleProfileImageForCalls"
+            android:background="@drawable/bottom_blue_border">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/profilenameforCalls"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Rüfət Nəsirov"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/arrowforCalling"
+                android:layout_below="@+id/profilenameforCalls"
+                android:textSize="14sp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/ic_upward"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dateforCalls"
+                android:layout_below="@+id/profilenameforCalls"
+                android:layout_toRightOf="@+id/arrowforCalling"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Yesterday 18:06"
+                android:textSize="14sp"/>
+
+
+
+            <ImageView
+                android:id="@+id/ic_call_for_calling"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_call"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

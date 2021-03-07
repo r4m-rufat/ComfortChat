@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Profile photo"
+        android:fontFamily="@font/shadow"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/rellayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleGallery"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/button_gallery" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/circleGallery"
+            android:text="Gallery"
+            android:textColor="@color/colorPrimaryDark"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/rellayout1">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleCamera"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/button_camera" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/circleCamera"
+            android:text="Camera"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

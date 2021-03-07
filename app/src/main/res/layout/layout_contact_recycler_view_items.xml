@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="10dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageForContacts"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="0.5dp"
+        android:src="@drawable/person"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rellayout1"
+        android:layout_toRightOf="@+id/circleImageForContacts"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/profilenameforContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtBio"
+            android:layout_below="@+id/profilenameforContact"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/shadow"
+            android:text="I am using ComfortChat"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MenuItems.Profile.ProfileActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ic_back_forProfile"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_arrow_back"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtProfile"
+                    android:layout_toRightOf="@+id/ic_back_forProfile"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    android:text="Profile"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/relCircleImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/appbarProfile"
+        android:layout_centerHorizontal="true"
+         android:layout_marginTop="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/circleDefaultImage"
+            android:src="@drawable/person"
+            android:transitionName="profileimage"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorPrimaryDark"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:elevation="10dp"
+            app:elevation="0dp"
+            android:src="@drawable/ic_camera"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:id="@+id/floating_action_profileAdd"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relusername"
+        android:layout_below="@+id/relCircleImage"
+        android:layout_marginTop="40dp">
+
+
+        <ImageView
+            android:id="@+id/ic_user"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_user"
+            android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txtUsername"
+                android:layout_toRightOf="@id/ic_user"
+                android:text="Username"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/ic_createForUsername"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_create"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relBio"
+        android:layout_below="@+id/relusername"
+        android:layout_marginTop="30dp">
+
+
+        <ImageView
+            android:id="@+id/ic_info"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_info"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/text"
+            android:layout_toRightOf="@id/ic_info"
+            android:text="Bio"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:id="@+id/txtBio"
+            android:layout_toRightOf="@id/ic_info"
+            android:text="I am using ComfortChat"
+            android:layout_below="@+id/text"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/ic_createForBio"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_create"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relTelephone"
+        android:layout_below="@+id/relBio"
+        android:layout_marginTop="30dp">
+
+
+        <ImageView
+            android:id="@+id/ic_phone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_call"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/txtPhone"
+            android:layout_toRightOf="@id/ic_phone"
+            android:text="Phone"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/signOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:text="Sign Out"/>
+
+
+</RelativeLayout>

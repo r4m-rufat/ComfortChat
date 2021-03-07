@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Activities.Status.AddStatusActivity">
+
+    <com.jsibbold.zoomage.ZoomageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:zoomage_autoCenter="true"
+        android:id="@+id/status_image_from_camera"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/sendStatusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="-25dp"
+        android:src="@drawable/ic_send"
+        android:layout_marginRight="10dp"
+        android:layout_above="@+id/rellayout1"
+        android:backgroundTint="@color/colorPrimaryDark"/>
+
+    <RelativeLayout
+        android:id="@+id/rellayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#CD0A597E"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/ic_caption"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_caption"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/etxtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:layout_toRightOf="@+id/ic_caption"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="65dp"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:hint="Add a caption... "
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

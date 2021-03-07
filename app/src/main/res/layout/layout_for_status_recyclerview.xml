@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginTop="5dp">
+
+    <RelativeLayout
+        android:id="@+id/relUserStatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/circleStatusImage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="1dp"
+            app:civ_border_width="2dp"
+            android:src="@drawable/person"
+            app:civ_border_color="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/usernameForStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/circleStatusImage"
+            android:text="My status"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/timeForStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="20:19"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

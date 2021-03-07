@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MenuItems.SettingsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ic_back_forProfile"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_arrow_back"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtProfile"
+                    android:layout_toRightOf="@+id/ic_back_forProfile"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    android:text="Profile"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/rellayout1"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/appbarSettings">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/settingsProfileImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:civ_border_width="1dp"
+            app:civ_border_overlay="true"
+            android:src="@drawable/person"/>
+
+        <TextView
+            android:id="@+id/txtsettingsProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/shadow"
+            android:text="Rufat Nasirov"
+            android:layout_toRightOf="@+id/settingsProfileImage"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/settingsBio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtsettingsProfileName"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/settingsProfileImage"
+            android:text="I am using ComfortChat"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/rellayout1"
+        android:id="@+id/lineImage"
+        android:layout_marginTop="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relSecurity"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bottom_blue_border"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/lineImage">
+
+        <ImageView
+            android:id="@+id/ic_security"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_security"
+            android:layout_marginLeft="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rellayout2"
+            android:layout_toRightOf="@id/ic_security">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txtsecurity"
+                android:text="Account Security"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtsecurity"
+                android:id="@+id/txtsecurityContent"
+                android:text="Privacy, Security, Change Number"
+                android:layout_marginLeft="10dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relNotification"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bottom_blue_border"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/relSecurity">
+
+        <ImageView
+            android:id="@+id/ic_notification"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_notification"
+            android:layout_marginLeft="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rellayout3"
+            android:layout_toRightOf="@id/ic_notification">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txtnotification"
+                android:text="Notification"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtnotification"
+                android:id="@+id/txtnotificationContent"
+                android:text="Message notification"
+                android:layout_marginLeft="10dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relfriends"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bottom_blue_border"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/relNotification">
+
+        <ImageView
+            android:id="@+id/ic_friends"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_friends"
+            android:layout_marginLeft="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rellayout5"
+            android:layout_toRightOf="@id/ic_friends">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txtfriends"
+                android:text="Invite Friends"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtfriends"
+                android:id="@+id/txtfriendsContent"
+                android:text="Invite friends to chat"
+                android:layout_marginLeft="10dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relhelp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bottom_blue_border"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/relfriends">
+
+        <ImageView
+            android:id="@+id/ic_help"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_help"
+            android:layout_marginLeft="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rellayout4"
+            android:layout_toRightOf="@id/ic_help">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/txthelp"
+                android:text="Help"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EAEAEA">
+
+    <RelativeLayout
+        android:id="@+id/rellayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_right_message">
+
+            <TextView
+                android:id="@+id/txtMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:text="Salam broo necəsən?"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/messageTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtMessage"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-7dp"
+                android:text="14:02"
+                android:textSize="11sp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rellayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rellayout1"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_right_message"
+            android:visibility="gone">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="15dp">
+
+                <ImageView
+                    android:id="@+id/imageForMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/person"/>
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:id="@+id/messageTime"-->
+                <!--                    android:layout_gravity="bottom|right"-->
+                <!--                    android:textSize="11sp"-->
+                <!--                    android:layout_marginRight="10dp"-->
+                <!--                    android:layout_marginTop="-10dp"-->
+                <!--                    android:layout_below="@+id/imageForMessage"-->
+                <!--                    android:text="14:02"/>-->
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageForMessage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/person"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/layout_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rellayout1"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:padding="2dp"
+        android:background="@drawable/background_right_message"
+        android:layout_marginRight="10dp"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/ic_play"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_play"
+            android:clickable="false"
+            android:background="@android:color/transparent"/>
+
+        <View
+            android:id="@+id/play_view"
+            android:layout_width="100dp"
+            android:layout_height="2.5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-8dp"
+            android:background="@drawable/play_view_background"
+            android:layout_marginRight="3dp"
+            android:layout_toRightOf="@id/ic_play"/>
+
+
+        <TextView
+            android:id="@+id/txt_choronometr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/play_view"
+            android:layout_marginRight="3dp"
+            android:text="00:07"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+
+
+    </RelativeLayout>

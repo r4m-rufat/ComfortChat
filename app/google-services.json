@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "402853453814",
+    "firebase_url": "https://comfortchat-187e5.firebaseio.com",
+    "project_id": "comfortchat-187e5",
+    "storage_bucket": "comfortchat-187e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402853453814:android:e52541678822a485f171d7",
+        "android_client_info": {
+          "package_name": "com.example.comfortchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "402853453814-6gtv0a9q6g7pbhud3v3p5d5cnaprgk08.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhxoLoGxSo9zITobWMEYpQ1PixqJpwyfk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "402853453814-6gtv0a9q6g7pbhud3v3p5d5cnaprgk08.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

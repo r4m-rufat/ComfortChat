@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Registration.RegisterActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/logoforLogin"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/whatsapplogo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/logoforLogin"
+        android:layout_marginTop="-50dp"
+        android:layout_marginBottom="-100dp"
+        android:background="@drawable/background_for_login">
+
+        <TextView
+            android:id="@+id/txtenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto"
+            android:text="Enter your phone number"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/ic_more_for_login"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/ic_more" />
+
+        <TextView
+            android:id="@+id/txtverify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtenter"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="ComfortChat will send you an SMS message to verify your phone number"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/rellayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtverify"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txtplus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etxtcountryCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/txtplus"
+                android:hint="994"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/etxtphoneNumber"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/etxtcountryCode"
+                android:hint="phone number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtverifyCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rellayout2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:text="Please enter code which you are sent"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etxtverificationCode"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtverifyCode"
+            android:hint="enter verification code"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/nextButton"
+            android:layout_below="@id/etxtverificationCode"
+            android:text="NEXT"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

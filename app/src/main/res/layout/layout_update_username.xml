@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/shadow"
+        android:text="Edit your name"/>
+
+    <EditText
+        android:id="@+id/etxt_update_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/text1"
+        android:hint="Username"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:paddingBottom="15dp"/>
+
+
+    <Button
+        android:id="@+id/confirm_buttonChangeUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Save"
+        android:textColor="#21D801"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/etxt_update_username"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>

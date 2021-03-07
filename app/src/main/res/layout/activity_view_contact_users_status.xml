@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Activities.Status.ViewContactUsersStatusActivity">
+
+    <RelativeLayout
+        android:id="@+id/rellayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/ic_backForStatusView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@id/ic_backForStatusView"
+            android:src="@drawable/person"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/anotherPersonStatusImage"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/anotherPersonStatusImage">
+
+            <TextView
+                android:id="@+id/usernameForStatusUsers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:text="My status" />
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_below="@+id/usernameForStatusUsers"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:text="10 minutes ago"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.jsibbold.zoomage.ZoomageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rellayout1"
+        app:zoomage_autoCenter="true"
+        android:id="@+id/statusImage"
+        />
+
+    <RelativeLayout
+        android:id="@+id/descLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="75dp"
+        android:background="#D80A597E">
+
+        <TextView
+            android:id="@+id/txtCaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:text="Rufat have maked this application"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

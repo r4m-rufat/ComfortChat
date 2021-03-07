@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/background_profile_for_popup_dialog">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:id="@+id/imageForPopupDialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_documents"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#9A333333">
+
+            <TextView
+                android:id="@+id/pofileDialogName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="Rufat"/>
+
+            <ImageView
+                android:id="@+id/closePopupDialog"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_close"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

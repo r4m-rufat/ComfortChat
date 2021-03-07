@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="0dp"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="ComfortChat"
+            app:titleTextColor="@color/white">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_below="@+id/appbar"
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabBackground="@color/colorPrimaryDark"
+        app:tabGravity="fill"
+        app:tabIndicator="@color/colorPrimaryDark"
+        app:tabIndicatorColor="@color/white"
+        app:tabIndicatorGravity="bottom"
+        app:tabIndicatorHeight="2dp"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/lightblue">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@+id/tab_layout"
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/floating_action"
+        android:src="@drawable/ic_chat"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageButton
+        android:id="@+id/edit_status"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/background_for_edit_text_status"
+        android:src="@drawable/ic_create"
+        android:tint="@color/white"
+        android:visibility="invisible"
+        android:elevation="3dp"
+        android:layout_above="@+id/floating_action"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"/>
+
+
+</RelativeLayout>
